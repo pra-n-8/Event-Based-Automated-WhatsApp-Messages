@@ -10,7 +10,7 @@ from model import Person
 
 def sendTextMessage(birthday_people):
     c_options = webdriver.ChromeOptions()
-    c_options.add_argument("user-data-dir=C:/Users/PRANIT/AppData/Local/Google/Chrome/User Data/Default")
+    c_options.add_argument("user-data-dir=C:/Users/%UserName%/AppData/Local/Google/Chrome/User Data/Default")
     driver = webdriver.Chrome(executable_path=r'G:/Projects/Python/chromedriver.exe',options=c_options)
 
     driver.get("https://web.whatsapp.com/")
